@@ -16,7 +16,7 @@ namespace ProjectRedLine
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new uretimPanel());
+            Application.Run(new YonetimHatti.YonetimPanel());
         }
     }
 }

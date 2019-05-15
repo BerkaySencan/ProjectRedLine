@@ -48,6 +48,8 @@
     <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -106,6 +108,60 @@
     <Compile Include="UretımHatti\urunSil.Designer.cs">
       <DependentUpon>urunSil.cs</DependentUpon>
     </Compile>
+    <Compile Include="YonetimHatti\detayliUretim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\detayliUretim.Designer.cs">
+      <DependentUpon>detayliUretim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\hamMaddeListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\hamMaddeListesi.Designer.cs">
+      <DependentUpon>hamMaddeListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\satisAylik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\satisAylik.Designer.cs">
+      <DependentUpon>satisAylik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\satisGunluk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\satisGunluk.Designer.cs">
+      <DependentUpon>satisGunluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\satisYillik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\satisYillik.Designer.cs">
+      <DependentUpon>satisYillik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\tukenmisUrunListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\tukenmisUrunListesi.Designer.cs">
+      <DependentUpon>tukenmisUrunListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\urunListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\urunListesi.Designer.cs">
+      <DependentUpon>urunListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\urunStokListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\urunStokListesi.Designer.cs">
+      <DependentUpon>urunStokListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\YonetimPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\YonetimPanel.Designer.cs">
+      <DependentUpon>YonetimPanel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +193,33 @@
     <EmbeddedResource Include="UretımHatti\urunSil.resx">
       <DependentUpon>urunSil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\detayliUretim.resx">
+      <DependentUpon>detayliUretim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\hamMaddeListesi.resx">
+      <DependentUpon>hamMaddeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\satisAylik.resx">
+      <DependentUpon>satisAylik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\satisGunluk.resx">
+      <DependentUpon>satisGunluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\satisYillik.resx">
+      <DependentUpon>satisYillik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\tukenmisUrunListesi.resx">
+      <DependentUpon>tukenmisUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\urunListesi.resx">
+      <DependentUpon>urunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\urunStokListesi.resx">
+      <DependentUpon>urunStokListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\YonetimPanel.resx">
+      <DependentUpon>YonetimPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SatisHatti\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
