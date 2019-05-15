@@ -63,7 +63,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupControl1.Location = new System.Drawing.Point(0, 228);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(932, 376);
+            this.groupControl1.Size = new System.Drawing.Size(881, 376);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Detaylı Üretim Raporları";
             // 
@@ -73,7 +73,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(928, 354);
+            this.gridControl1.Size = new System.Drawing.Size(877, 354);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -176,7 +176,7 @@
             // 
             // btnModel
             // 
-            this.btnModel.Location = new System.Drawing.Point(500, 165);
+            this.btnModel.Location = new System.Drawing.Point(456, 162);
             this.btnModel.Name = "btnModel";
             this.btnModel.Size = new System.Drawing.Size(170, 45);
             this.btnModel.TabIndex = 3;
@@ -185,7 +185,7 @@
             // btnExport
             // 
             this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
-            this.btnExport.Location = new System.Drawing.Point(707, 172);
+            this.btnExport.Location = new System.Drawing.Point(678, 165);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(128, 50);
             this.btnExport.TabIndex = 11;
@@ -210,7 +210,7 @@
             this.Controls.Add(this.btnKategori);
             this.Controls.Add(this.groupControl1);
             this.Name = "detayliUretim";
-            this.Size = new System.Drawing.Size(932, 604);
+            this.Size = new System.Drawing.Size(881, 604);
             this.Load += new System.EventHandler(this.DetayliUretim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
