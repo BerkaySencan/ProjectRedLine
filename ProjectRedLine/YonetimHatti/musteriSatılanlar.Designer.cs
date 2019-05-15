@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(musteriSatılanlar));
             this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             this.btnGetir = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -44,6 +45,7 @@
             // 
             // btnExport
             // 
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
             this.btnExport.Location = new System.Drawing.Point(904, 54);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(128, 50);

@@ -185,7 +185,7 @@
             // btnExport
             // 
             this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
-            this.btnExport.Location = new System.Drawing.Point(801, 172);
+            this.btnExport.Location = new System.Drawing.Point(707, 172);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(128, 50);
             this.btnExport.TabIndex = 11;

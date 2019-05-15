@@ -219,5 +219,27 @@ namespace ProjectRedLine.YonetimHatti
             }
             hamMaddeOnay.Instance.BringToFront();
         }
+
+        private void BtnSiparisOnay_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(siparisRapor.Instance))
+            {
+                container.Controls.Add(siparisRapor.Instance);
+                siparisRapor.Instance.Dock = DockStyle.Fill;
+                siparisRapor.Instance.BringToFront();
+            }
+            siparisRapor.Instance.BringToFront();
+        }
+
+        private void BtnHamMaddeAlım_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(hamMaddeAlım.Instance))
+            {
+                container.Controls.Add(hamMaddeAlım.Instance);
+                hamMaddeAlım.Instance.Dock = DockStyle.Fill;
+                hamMaddeAlım.Instance.BringToFront();
+            }
+            hamMaddeAlım.Instance.BringToFront();
+        }
     }
 }

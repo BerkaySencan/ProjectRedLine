@@ -1,6 +1,6 @@
 ﻿namespace ProjectRedLine.YonetimHatti
 {
-    partial class hamMaddeListesi
+    partial class siparisRapor
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,27 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hamMaddeListesi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(siparisRapor));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.btnGetir = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbMusteri = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.btnHepsiniGetir = new DevExpress.XtraEditors.SimpleButton();
             this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbMusteri.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.gridControl1);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl1.Location = new System.Drawing.Point(0, 140);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(894, 533);
-            this.groupControl1.TabIndex = 1;
-            this.groupControl1.Text = "Ham Madde Listesi";
-            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.GroupControl1_Paint);
+            this.groupControl1.Size = new System.Drawing.Size(1184, 533);
+            this.groupControl1.TabIndex = 5;
+            this.groupControl1.Text = "Sipariş Rapor";
             // 
             // gridControl1
             // 
@@ -56,7 +60,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(890, 511);
+            this.gridControl1.Size = new System.Drawing.Size(1180, 511);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -66,29 +70,68 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // btnGetir
+            // 
+            this.btnGetir.Location = new System.Drawing.Point(437, 63);
+            this.btnGetir.Name = "btnGetir";
+            this.btnGetir.Size = new System.Drawing.Size(187, 46);
+            this.btnGetir.TabIndex = 7;
+            this.btnGetir.Text = "Sipariş Detayını Getir";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(51, 43);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(115, 13);
+            this.labelControl1.TabIndex = 8;
+            this.labelControl1.Text = "Sipariş Olan Müşterileri :";
+            // 
+            // cmbMusteri
+            // 
+            this.cmbMusteri.Location = new System.Drawing.Point(185, 40);
+            this.cmbMusteri.Name = "cmbMusteri";
+            this.cmbMusteri.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbMusteri.Size = new System.Drawing.Size(200, 20);
+            this.cmbMusteri.TabIndex = 9;
+            // 
+            // btnHepsiniGetir
+            // 
+            this.btnHepsiniGetir.Location = new System.Drawing.Point(654, 63);
+            this.btnHepsiniGetir.Name = "btnHepsiniGetir";
+            this.btnHepsiniGetir.Size = new System.Drawing.Size(187, 46);
+            this.btnHepsiniGetir.TabIndex = 7;
+            this.btnHepsiniGetir.Text = "Tüm Siparişleri Getir";
+            // 
             // btnExport
             // 
-            this.btnExport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
-            this.btnExport.Location = new System.Drawing.Point(0, 533);
+            this.btnExport.Location = new System.Drawing.Point(1043, 84);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(894, 43);
-            this.btnExport.TabIndex = 2;
+            this.btnExport.Size = new System.Drawing.Size(128, 50);
+            this.btnExport.TabIndex = 13;
             this.btnExport.Text = "EXPORT PDF";
             // 
-            // hamMaddeListesi
+            // siparisRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.cmbMusteri);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.btnHepsiniGetir);
+            this.Controls.Add(this.btnGetir);
             this.Controls.Add(this.groupControl1);
-            this.Name = "hamMaddeListesi";
-            this.Size = new System.Drawing.Size(894, 576);
+            this.Name = "siparisRapor";
+            this.Size = new System.Drawing.Size(1184, 673);
+            this.Load += new System.EventHandler(this.SiparisRapor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbMusteri.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,6 +140,10 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton btnGetir;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbMusteri;
+        private DevExpress.XtraEditors.SimpleButton btnHepsiniGetir;
         private DevExpress.XtraEditors.SimpleButton btnExport;
     }
 }

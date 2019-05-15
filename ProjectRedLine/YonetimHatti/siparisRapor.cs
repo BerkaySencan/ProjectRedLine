@@ -11,27 +11,27 @@ using DevExpress.XtraEditors;
 
 namespace ProjectRedLine.YonetimHatti
 {
-    public partial class hamMaddeOnay : DevExpress.XtraEditors.XtraUserControl
+    public partial class siparisRapor : DevExpress.XtraEditors.XtraUserControl
     {
-        public hamMaddeOnay()
+        public siparisRapor()
         {
             InitializeComponent();
         }
-        private static hamMaddeOnay _instance;
-        public static hamMaddeOnay Instance
+        private static siparisRapor _instance;
+        public static siparisRapor Instance
         {
             get
             {
-                if (_instance == null) _instance = new hamMaddeOnay();
+                if (_instance == null) _instance = new siparisRapor();
                 return _instance;
             }
         }
-        private void GroupControl1_Paint(object sender, PaintEventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void LabelControl2_Click(object sender, EventArgs e)
+        private void SiparisRapor_Load(object sender, EventArgs e)
         {
 
         }

@@ -277,13 +277,15 @@
             // 
             this.btnSiparisOnay.Name = "btnSiparisOnay";
             this.btnSiparisOnay.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnSiparisOnay.Text = "Sipariş Onay";
+            this.btnSiparisOnay.Text = "Sipariş Rapor";
+            this.btnSiparisOnay.Click += new System.EventHandler(this.BtnSiparisOnay_Click);
             // 
             // btnHamMaddeAlım
             // 
             this.btnHamMaddeAlım.Name = "btnHamMaddeAlım";
             this.btnHamMaddeAlım.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHamMaddeAlım.Text = "Ham Madde Alım";
+            this.btnHamMaddeAlım.Click += new System.EventHandler(this.BtnHamMaddeAlım_Click);
             // 
             // fluentDesignFormControl1
             // 
