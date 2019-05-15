@@ -57,7 +57,7 @@
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.container.Location = new System.Drawing.Point(180, 27);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(891, 559);
+            this.container.Size = new System.Drawing.Size(926, 597);
             this.container.TabIndex = 0;
             // 
             // accordionControl1
@@ -71,7 +71,7 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 27);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(180, 559);
+            this.accordionControl1.Size = new System.Drawing.Size(180, 597);
             this.accordionControl1.TabIndex = 1;
             // 
             // accordionControlElement1
@@ -209,7 +209,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1071, 27);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1106, 27);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -223,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 586);
+            this.ClientSize = new System.Drawing.Size(1106, 624);
             this.ControlContainer = this.container;
             this.Controls.Add(this.container);
             this.Controls.Add(this.accordionControl1);
