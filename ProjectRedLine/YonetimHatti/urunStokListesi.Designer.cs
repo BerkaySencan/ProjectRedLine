@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(urunStokListesi));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -44,7 +45,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1006, 533);
+            this.groupControl1.Size = new System.Drawing.Size(1006, 503);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Ürün Stok Listesi";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.GroupControl1_Paint);
@@ -55,7 +56,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1002, 511);
+            this.gridControl1.Size = new System.Drawing.Size(1002, 481);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -68,9 +69,10 @@
             // btnExport
             // 
             this.btnExport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExport.Location = new System.Drawing.Point(0, 533);
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
+            this.btnExport.Location = new System.Drawing.Point(0, 503);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(1006, 40);
+            this.btnExport.Size = new System.Drawing.Size(1006, 70);
             this.btnExport.TabIndex = 3;
             this.btnExport.Text = "EXPORT PDF";
             // 

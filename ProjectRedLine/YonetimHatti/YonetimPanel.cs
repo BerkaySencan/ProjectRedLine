@@ -131,5 +131,93 @@ namespace ProjectRedLine.YonetimHatti
             }
             satisGunluk.Instance.BringToFront();
         }
+
+        private void BtnVerilenCekSenet_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(verilenCekSenet.Instance))
+            {
+                container.Controls.Add(verilenCekSenet.Instance);
+                verilenCekSenet.Instance.Dock = DockStyle.Fill;
+                verilenCekSenet.Instance.BringToFront();
+            }
+            verilenCekSenet.Instance.BringToFront();
+        }
+
+        private void BtnAlınanCekSenet_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(alinanCeksSenet.Instance))
+            {
+                container.Controls.Add(alinanCeksSenet.Instance);
+                alinanCeksSenet.Instance.Dock = DockStyle.Fill;
+                alinanCeksSenet.Instance.BringToFront();
+            }
+            alinanCeksSenet.Instance.BringToFront();
+        }
+
+        private void BtnNakitOdeme_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(nakitOdeme.Instance))
+            {
+                container.Controls.Add(nakitOdeme.Instance);
+                nakitOdeme.Instance.Dock = DockStyle.Fill;
+                nakitOdeme.Instance.BringToFront();
+            }
+            nakitOdeme.Instance.BringToFront();
+        }
+
+        private void BtnMusteriOdeme_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(musteriOdeme.Instance))
+            {
+                container.Controls.Add(musteriOdeme.Instance);
+                musteriOdeme.Instance.Dock = DockStyle.Fill;
+                musteriOdeme.Instance.BringToFront();
+            }
+            musteriOdeme.Instance.BringToFront();
+        }
+
+        private void BtnMusteriSatılan_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(musteriSatılanlar.Instance))
+            {
+                container.Controls.Add(musteriSatılanlar.Instance);
+                musteriSatılanlar.Instance.Dock = DockStyle.Fill;
+                musteriSatılanlar.Instance.BringToFront();
+            }
+            musteriSatılanlar.Instance.BringToFront();
+        }
+
+        private void BtnTedarikciAlım_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(tedarikciAlımListesi.Instance))
+            {
+                container.Controls.Add(tedarikciAlımListesi.Instance);
+                tedarikciAlımListesi.Instance.Dock = DockStyle.Fill;
+                tedarikciAlımListesi.Instance.BringToFront();
+            }
+            tedarikciAlımListesi.Instance.BringToFront();
+        }
+
+        private void BtnTedarikciBorc_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(tedarikciBorcListesi.Instance))
+            {
+                container.Controls.Add(tedarikciBorcListesi.Instance);
+                tedarikciBorcListesi.Instance.Dock = DockStyle.Fill;
+                tedarikciBorcListesi.Instance.BringToFront();
+            }
+            tedarikciBorcListesi.Instance.BringToFront();
+        }
+
+        private void BtnHamMaddeOnay_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(hamMaddeOnay.Instance))
+            {
+                container.Controls.Add(hamMaddeOnay.Instance);
+                hamMaddeOnay.Instance.Dock = DockStyle.Fill;
+                hamMaddeOnay.Instance.BringToFront();
+            }
+            hamMaddeOnay.Instance.BringToFront();
+        }
     }
 }

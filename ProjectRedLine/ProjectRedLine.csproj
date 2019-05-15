@@ -108,6 +108,12 @@
     <Compile Include="UretımHatti\urunSil.Designer.cs">
       <DependentUpon>urunSil.cs</DependentUpon>
     </Compile>
+    <Compile Include="YonetimHatti\alinanCeksSenet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\alinanCeksSenet.Designer.cs">
+      <DependentUpon>alinanCeksSenet.cs</DependentUpon>
+    </Compile>
     <Compile Include="YonetimHatti\detayliUretim.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,30 @@
     </Compile>
     <Compile Include="YonetimHatti\hamMaddeListesi.Designer.cs">
       <DependentUpon>hamMaddeListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\hamMaddeOnay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\hamMaddeOnay.Designer.cs">
+      <DependentUpon>hamMaddeOnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\musteriOdeme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\musteriOdeme.Designer.cs">
+      <DependentUpon>musteriOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\musteriSatılanlar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\musteriSatılanlar.Designer.cs">
+      <DependentUpon>musteriSatılanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\nakitOdeme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\nakitOdeme.Designer.cs">
+      <DependentUpon>nakitOdeme.cs</DependentUpon>
     </Compile>
     <Compile Include="YonetimHatti\satisAylik.cs">
       <SubType>UserControl</SubType>
@@ -138,6 +168,18 @@
     <Compile Include="YonetimHatti\satisYillik.Designer.cs">
       <DependentUpon>satisYillik.cs</DependentUpon>
     </Compile>
+    <Compile Include="YonetimHatti\tedarikciAlımListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\tedarikciAlımListesi.Designer.cs">
+      <DependentUpon>tedarikciAlımListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\tedarikciBorcListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\tedarikciBorcListesi.Designer.cs">
+      <DependentUpon>tedarikciBorcListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="YonetimHatti\tukenmisUrunListesi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +197,12 @@
     </Compile>
     <Compile Include="YonetimHatti\urunStokListesi.Designer.cs">
       <DependentUpon>urunStokListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimHatti\verilenCekSenet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonetimHatti\verilenCekSenet.Designer.cs">
+      <DependentUpon>verilenCekSenet.cs</DependentUpon>
     </Compile>
     <Compile Include="YonetimHatti\YonetimPanel.cs">
       <SubType>Form</SubType>
@@ -193,11 +241,26 @@
     <EmbeddedResource Include="UretımHatti\urunSil.resx">
       <DependentUpon>urunSil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\alinanCeksSenet.resx">
+      <DependentUpon>alinanCeksSenet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\detayliUretim.resx">
       <DependentUpon>detayliUretim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\hamMaddeListesi.resx">
       <DependentUpon>hamMaddeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\hamMaddeOnay.resx">
+      <DependentUpon>hamMaddeOnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\musteriOdeme.resx">
+      <DependentUpon>musteriOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\musteriSatılanlar.resx">
+      <DependentUpon>musteriSatılanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\nakitOdeme.resx">
+      <DependentUpon>nakitOdeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\satisAylik.resx">
       <DependentUpon>satisAylik.cs</DependentUpon>
@@ -208,6 +271,12 @@
     <EmbeddedResource Include="YonetimHatti\satisYillik.resx">
       <DependentUpon>satisYillik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\tedarikciAlımListesi.resx">
+      <DependentUpon>tedarikciAlımListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\tedarikciBorcListesi.resx">
+      <DependentUpon>tedarikciBorcListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\tukenmisUrunListesi.resx">
       <DependentUpon>tukenmisUrunListesi.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\urunStokListesi.resx">
       <DependentUpon>urunStokListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonetimHatti\verilenCekSenet.resx">
+      <DependentUpon>verilenCekSenet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\YonetimPanel.resx">
       <DependentUpon>YonetimPanel.cs</DependentUpon>

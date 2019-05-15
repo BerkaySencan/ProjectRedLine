@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(satisAylik));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -44,7 +45,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(931, 533);
+            this.groupControl1.Size = new System.Drawing.Size(977, 533);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Aylık Satış Raporu";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.GroupControl1_Paint);
@@ -55,7 +56,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(927, 511);
+            this.gridControl1.Size = new System.Drawing.Size(973, 511);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -68,9 +69,10 @@
             // btnExport
             // 
             this.btnExport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
             this.btnExport.Location = new System.Drawing.Point(0, 533);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(931, 32);
+            this.btnExport.Size = new System.Drawing.Size(977, 89);
             this.btnExport.TabIndex = 4;
             this.btnExport.Text = "EXPORT PDF";
             // 
@@ -81,7 +83,7 @@
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.groupControl1);
             this.Name = "satisAylik";
-            this.Size = new System.Drawing.Size(931, 565);
+            this.Size = new System.Drawing.Size(977, 622);
             this.Load += new System.EventHandler(this.SatisAylik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(satisYillik));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -68,19 +69,20 @@
             // btnExport
             // 
             this.btnExport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
             this.btnExport.Location = new System.Drawing.Point(0, 533);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(960, 46);
             this.btnExport.TabIndex = 3;
             this.btnExport.Text = "EXPORT PDF";
             // 
-            // satısYıllık
+            // satisYillik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.groupControl1);
-            this.Name = "satısYıllık";
+            this.Name = "satisYillik";
             this.Size = new System.Drawing.Size(960, 579);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

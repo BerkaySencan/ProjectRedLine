@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YonetimPanel));
             this.container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -94,6 +95,7 @@
             this.BtnTukenmisUrunListele,
             this.btnDetayliUretim});
             this.accordionControlElement3.Expanded = true;
+            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Üretim Raporları";
             this.accordionControlElement3.Click += new System.EventHandler(this.AccordionControlElement3_Click);
@@ -140,6 +142,7 @@
             this.btnAylıkSatıs,
             this.btnGunlukSatıs});
             this.accordionControlElement10.Expanded = true;
+            this.accordionControlElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement10.ImageOptions.Image")));
             this.accordionControlElement10.Name = "accordionControlElement10";
             this.accordionControlElement10.Text = "Satış Raporları";
             this.accordionControlElement10.Click += new System.EventHandler(this.AccordionControlElement10_Click);
@@ -172,6 +175,7 @@
             this.btnAlınanCekSenet,
             this.btnNakitOdeme});
             this.accordionControlElement15.Expanded = true;
+            this.accordionControlElement15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement15.ImageOptions.Image")));
             this.accordionControlElement15.Name = "accordionControlElement15";
             this.accordionControlElement15.Text = "Ödeme Raporları";
             // 
@@ -180,18 +184,21 @@
             this.btnVerilenCekSenet.Name = "btnVerilenCekSenet";
             this.btnVerilenCekSenet.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnVerilenCekSenet.Text = "Verilen Çek-Senet Listesi";
+            this.btnVerilenCekSenet.Click += new System.EventHandler(this.BtnVerilenCekSenet_Click);
             // 
             // btnAlınanCekSenet
             // 
             this.btnAlınanCekSenet.Name = "btnAlınanCekSenet";
             this.btnAlınanCekSenet.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnAlınanCekSenet.Text = "Alınan Çek-Senet Listesi";
+            this.btnAlınanCekSenet.Click += new System.EventHandler(this.BtnAlınanCekSenet_Click);
             // 
             // btnNakitOdeme
             // 
             this.btnNakitOdeme.Name = "btnNakitOdeme";
             this.btnNakitOdeme.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnNakitOdeme.Text = "Nakit Ödeme Listesi";
+            this.btnNakitOdeme.Click += new System.EventHandler(this.BtnNakitOdeme_Click);
             // 
             // accordionControlElement19
             // 
@@ -199,6 +206,7 @@
             this.btnMusteriOdeme,
             this.btnMusteriSatılan});
             this.accordionControlElement19.Expanded = true;
+            this.accordionControlElement19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement19.ImageOptions.Image")));
             this.accordionControlElement19.Name = "accordionControlElement19";
             this.accordionControlElement19.Text = "Müşteri Raporları";
             this.accordionControlElement19.Click += new System.EventHandler(this.AccordionControlElement19_Click);
@@ -208,12 +216,14 @@
             this.btnMusteriOdeme.Name = "btnMusteriOdeme";
             this.btnMusteriOdeme.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnMusteriOdeme.Text = "Müşteri Ödeme Listesi";
+            this.btnMusteriOdeme.Click += new System.EventHandler(this.BtnMusteriOdeme_Click);
             // 
             // btnMusteriSatılan
             // 
             this.btnMusteriSatılan.Name = "btnMusteriSatılan";
             this.btnMusteriSatılan.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnMusteriSatılan.Text = "Müşteri Satılanlar Listesi";
+            this.btnMusteriSatılan.Click += new System.EventHandler(this.BtnMusteriSatılan_Click);
             // 
             // accordionControlElement22
             // 
@@ -221,6 +231,7 @@
             this.btnTedarikciAlım,
             this.btnTedarikciBorc});
             this.accordionControlElement22.Expanded = true;
+            this.accordionControlElement22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement22.ImageOptions.Image")));
             this.accordionControlElement22.Name = "accordionControlElement22";
             this.accordionControlElement22.Text = "Tedarikçi İşlemleri";
             this.accordionControlElement22.Click += new System.EventHandler(this.AccordionControlElement22_Click);
@@ -230,12 +241,14 @@
             this.btnTedarikciAlım.Name = "btnTedarikciAlım";
             this.btnTedarikciAlım.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTedarikciAlım.Text = "Tedarikçi Alım Raporu";
+            this.btnTedarikciAlım.Click += new System.EventHandler(this.BtnTedarikciAlım_Click);
             // 
             // btnTedarikciBorc
             // 
             this.btnTedarikciBorc.Name = "btnTedarikciBorc";
             this.btnTedarikciBorc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTedarikciBorc.Text = "Tedarikçi Borç Raporu";
+            this.btnTedarikciBorc.Click += new System.EventHandler(this.BtnTedarikciBorc_Click);
             // 
             // accordionControlElement1
             // 
@@ -244,14 +257,21 @@
             this.btnSiparisOnay,
             this.btnHamMaddeAlım});
             this.accordionControlElement1.Expanded = true;
+            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Onay Ve Sipariş İşlemleri";
             // 
             // btnHamMaddeOnay
             // 
+            this.btnHamMaddeOnay.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.btnHamMaddeOnay.Name = "btnHamMaddeOnay";
             this.btnHamMaddeOnay.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHamMaddeOnay.Text = "Üretim Ham Madde Onay";
+            this.btnHamMaddeOnay.Click += new System.EventHandler(this.BtnHamMaddeOnay_Click);
             // 
             // btnSiparisOnay
             // 

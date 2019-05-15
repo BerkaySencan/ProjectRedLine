@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(detayliUretim));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -45,6 +46,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cmbModel = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btnModel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -180,10 +182,20 @@
             this.btnModel.TabIndex = 3;
             this.btnModel.Text = "Modele Göre";
             // 
+            // btnExport
+            // 
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
+            this.btnExport.Location = new System.Drawing.Point(801, 172);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(128, 50);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "EXPORT PDF";
+            // 
             // detayliUretim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.txtBarkod);
             this.Controls.Add(this.cmbModel);
             this.Controls.Add(this.cmbKategori);
@@ -232,5 +244,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.ComboBoxEdit cmbModel;
         private DevExpress.XtraEditors.SimpleButton btnModel;
+        private DevExpress.XtraEditors.SimpleButton btnExport;
     }
 }
