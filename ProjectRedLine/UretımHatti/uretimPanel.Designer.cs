@@ -149,6 +149,7 @@
             this.btnUrunIslemKayıt.Name = "btnUrunIslemKayıt";
             this.btnUrunIslemKayıt.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnUrunIslemKayıt.Text = "Ürün İşlem Kayıt";
+            this.btnUrunIslemKayıt.Click += new System.EventHandler(this.BtnUrunIslemKayıt_Click);
             // 
             // accordionControlElement9
             // 

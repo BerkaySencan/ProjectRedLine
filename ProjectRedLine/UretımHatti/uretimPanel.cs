@@ -62,5 +62,16 @@ namespace ProjectRedLine
             urunMaliyetHesaplama.Instance.BringToFront();
 
         }
+
+        private void BtnUrunIslemKayıt_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunIslemKayit.Instance))
+            {
+                container.Controls.Add(urunIslemKayit.Instance);
+                urunIslemKayit.Instance.Dock = DockStyle.Fill;
+                urunIslemKayit.Instance.BringToFront();
+            }
+            urunIslemKayit.Instance.BringToFront();
+        }
     }
 }
