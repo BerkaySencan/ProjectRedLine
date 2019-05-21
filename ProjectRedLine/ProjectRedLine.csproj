@@ -331,6 +331,7 @@
 
     <EmbeddedResource Include="UretımHatti\urunUruneKalipAta.resx">
       <DependentUpon>urunUruneKalipAta.cs</DependentUpon>
+    </EmbeddedResource>
 
     <EmbeddedResource Include="YonetimHatti\alinanCeksSenet.resx">
       <DependentUpon>alinanCeksSenet.cs</DependentUpon>
