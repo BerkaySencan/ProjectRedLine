@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 using System.Windows.Forms;
 
 namespace ProjectRedLine
 {
     static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,11 +17,9 @@ namespace ProjectRedLine
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            Application.Run(new Form1());
-
-            Application.Run(new YonetimHatti.YonetimPanel());
-
+            Application.Run(new uretimPanel());
         }
     }
+
 }
+

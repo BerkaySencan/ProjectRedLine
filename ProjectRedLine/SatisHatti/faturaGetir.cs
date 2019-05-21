@@ -17,6 +17,7 @@ namespace ProjectRedLine.SatisHatti
         {
             InitializeComponent();
         }
+        private static faturaGetir _instance;
         public static faturaGetir Instance
         {
             get
