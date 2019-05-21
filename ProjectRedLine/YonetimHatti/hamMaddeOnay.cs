@@ -35,5 +35,10 @@ namespace ProjectRedLine.YonetimHatti
         {
 
         }
+
+        private void SimpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

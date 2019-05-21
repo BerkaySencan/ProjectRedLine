@@ -74,6 +74,7 @@
             this.groupControl1.Size = new System.Drawing.Size(711, 349);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Hammadde Olusturma";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.GroupControl1_Paint);
             // 
             // btnResimSec
             // 
@@ -82,6 +83,7 @@
             this.btnResimSec.Size = new System.Drawing.Size(156, 71);
             this.btnResimSec.TabIndex = 7;
             this.btnResimSec.Text = "Resim Seç";
+            this.btnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
             // 
             // labelControl7
             // 

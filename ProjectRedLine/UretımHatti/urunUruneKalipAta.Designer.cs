@@ -33,13 +33,16 @@
             this.cmbKalip = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtModelAd = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbKategori = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.btnResim = new DevExpress.XtraEditors.SimpleButton();
             this.btnSepeteEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btnMaliyetKayıt = new DevExpress.XtraEditors.SimpleButton();
             this.btnMaliyetGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbMarka = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -50,14 +53,12 @@
             this.txtBarkod = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.btnResim = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbKalip.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtModelAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbKategori.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbMarka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiktar.Properties)).BeginInit();
@@ -65,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBarkod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -135,6 +135,14 @@
             this.cmbKategori.Size = new System.Drawing.Size(129, 20);
             this.cmbKategori.TabIndex = 4;
             // 
+            // btnResim
+            // 
+            this.btnResim.Location = new System.Drawing.Point(637, 260);
+            this.btnResim.Name = "btnResim";
+            this.btnResim.Size = new System.Drawing.Size(156, 71);
+            this.btnResim.TabIndex = 2;
+            this.btnResim.Text = "Resim Ekle";
+            // 
             // btnSepeteEkle
             // 
             this.btnSepeteEkle.Location = new System.Drawing.Point(812, 260);
@@ -158,6 +166,15 @@
             this.btnMaliyetGuncelle.Size = new System.Drawing.Size(156, 71);
             this.btnMaliyetGuncelle.TabIndex = 2;
             this.btnMaliyetGuncelle.Text = "Maliyeti Güncelle";
+            this.btnMaliyetGuncelle.Click += new System.EventHandler(this.BtnMaliyetGuncelle_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(681, 102);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(196, 141);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -192,6 +209,14 @@
             this.labelControl2.Size = new System.Drawing.Size(50, 13);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Kalip Adi  :";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(594, 111);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(63, 13);
+            this.labelControl8.TabIndex = 1;
+            this.labelControl8.Text = "Kalip Resmi  :";
             // 
             // labelControl9
             // 
@@ -271,30 +296,6 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(681, 102);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 141);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(594, 111);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(63, 13);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "Kalip Resmi  :";
-            // 
-            // btnResim
-            // 
-            this.btnResim.Location = new System.Drawing.Point(637, 260);
-            this.btnResim.Name = "btnResim";
-            this.btnResim.Size = new System.Drawing.Size(156, 71);
-            this.btnResim.TabIndex = 2;
-            this.btnResim.Text = "Resim Ekle";
-            // 
             // urunUruneKalipAta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbKalip.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtModelAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbKategori.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbMarka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiktar.Properties)).EndInit();
@@ -316,7 +318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBarkod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

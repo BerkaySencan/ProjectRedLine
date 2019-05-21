@@ -13,6 +13,15 @@ namespace ProjectRedLine.UretımHatti
 {
     public partial class urunHamMaddeSil : DevExpress.XtraEditors.XtraUserControl
     {
+        private static urunHamMaddeSil _instance;
+        public static urunHamMaddeSil Instance
+        {
+            get
+            {
+                if (_instance == null) _instance = new urunHamMaddeSil();
+                return _instance;
+            }
+        }
         public urunHamMaddeSil()
         {
             InitializeComponent();

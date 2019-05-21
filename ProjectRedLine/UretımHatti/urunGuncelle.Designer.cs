@@ -195,6 +195,7 @@
             // 
             // gridControl1
             // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 355);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";

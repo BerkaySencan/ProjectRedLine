@@ -78,5 +78,73 @@ namespace ProjectRedLine
         {
 
         }
+
+        private void BtnHamMaddeGuncelle_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunHamMaddeGuncelleme.Instance))
+            {
+                container.Controls.Add(urunHamMaddeGuncelleme.Instance);
+                urunHamMaddeGuncelleme.Instance.Dock = DockStyle.Fill;
+                urunHamMaddeGuncelleme.Instance.BringToFront();
+            }
+            urunHamMaddeGuncelleme.Instance.BringToFront();
+        }
+
+        private void BtnHamMaddeOlustur_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunHamMaddeKayit.Instance))
+            {
+                container.Controls.Add(urunHamMaddeKayit.Instance);
+                urunHamMaddeKayit.Instance.Dock = DockStyle.Fill;
+                urunHamMaddeKayit.Instance.BringToFront();
+            }
+            urunHamMaddeKayit.Instance.BringToFront();
+        }
+
+        private void BtnHamMaddeSil_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunHamMaddeSil.Instance))
+            {
+                container.Controls.Add(urunHamMaddeSil.Instance);
+                urunHamMaddeSil.Instance.Dock = DockStyle.Fill;
+                urunHamMaddeSil.Instance.BringToFront();
+            }
+            urunHamMaddeSil.Instance.BringToFront();
+        }
+
+        private void BtnKalıpOlustur_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunKalipOlusturma.Instance))
+            {
+                container.Controls.Add(urunKalipOlusturma.Instance);
+                urunKalipOlusturma.Instance.Dock = DockStyle.Fill;
+                urunKalipOlusturma.Instance.BringToFront();
+            }
+            urunKalipOlusturma.Instance.BringToFront();
+        }
+
+        private void BtnUruneKalıpAta_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunUruneKalipAta.Instance))
+            {
+                container.Controls.Add(urunUruneKalipAta.Instance);
+                urunUruneKalipAta.Instance.Dock = DockStyle.Fill;
+                urunUruneKalipAta.Instance.BringToFront();
+            }
+            urunUruneKalipAta.Instance.BringToFront();
+        }
+
+      
+
+        private void BtnUrunHamMaddeTalep_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(urunHamMaddeTalep.Instance))
+            {
+                container.Controls.Add(urunHamMaddeTalep.Instance);
+                urunHamMaddeTalep.Instance.Dock = DockStyle.Fill;
+                urunHamMaddeTalep.Instance.BringToFront();
+            }
+            urunHamMaddeTalep.Instance.BringToFront();
+        }
     }
 }

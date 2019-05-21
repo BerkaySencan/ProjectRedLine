@@ -13,9 +13,23 @@ namespace ProjectRedLine.UretımHatti
 {
     public partial class urunHamMaddeGuncelleme : DevExpress.XtraEditors.XtraUserControl
     {
+        private static urunHamMaddeGuncelleme _instance;
+        public static urunHamMaddeGuncelleme Instance
+        {
+            get
+            {
+                if (_instance == null) _instance = new urunHamMaddeGuncelleme();
+                return _instance;
+            }
+        }
         public urunHamMaddeGuncelleme()
         {
             InitializeComponent();
+        }
+
+        private void BtnResimSec_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -79,6 +79,7 @@
             this.btnKayit.Size = new System.Drawing.Size(156, 71);
             this.btnKayit.TabIndex = 2;
             this.btnKayit.Text = "Kayıt";
+            this.btnKayit.Click += new System.EventHandler(this.BtnKayit_Click);
             // 
             // pictureBox1
             // 

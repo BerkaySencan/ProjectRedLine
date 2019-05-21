@@ -125,6 +125,12 @@
     <Compile Include="UretımHatti\urunHamMaddeSil.Designer.cs">
       <DependentUpon>urunHamMaddeSil.cs</DependentUpon>
     </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeTalep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeTalep.Designer.cs">
+      <DependentUpon>urunHamMaddeTalep.cs</DependentUpon>
+    </Compile>
     <Compile Include="UretımHatti\urunIslemKayit.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -312,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UretımHatti\urunHamMaddeSil.resx">
       <DependentUpon>urunHamMaddeSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretımHatti\urunHamMaddeTalep.resx">
+      <DependentUpon>urunHamMaddeTalep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UretımHatti\urunIslemKayit.resx">
       <DependentUpon>urunIslemKayit.cs</DependentUpon>

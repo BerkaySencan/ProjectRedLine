@@ -43,12 +43,12 @@
             this.btnHamMaddeOlustur = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnHamMaddeGuncelle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnHamMaddeSil = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnUrunHamMaddeTalep = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnKalıpOlustur = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnUruneKalıpAta = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +158,7 @@
             this.btnHamMaddeOlustur,
             this.btnHamMaddeGuncelle,
             this.btnHamMaddeSil,
-            this.accordionControlElement2});
+            this.btnUrunHamMaddeTalep});
             this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement9.ImageOptions.Image")));
             this.accordionControlElement9.Name = "accordionControlElement9";
@@ -169,18 +169,28 @@
             this.btnHamMaddeOlustur.Name = "btnHamMaddeOlustur";
             this.btnHamMaddeOlustur.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHamMaddeOlustur.Text = "Ham Madde Oluştur";
+            this.btnHamMaddeOlustur.Click += new System.EventHandler(this.BtnHamMaddeOlustur_Click);
             // 
             // btnHamMaddeGuncelle
             // 
             this.btnHamMaddeGuncelle.Name = "btnHamMaddeGuncelle";
             this.btnHamMaddeGuncelle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHamMaddeGuncelle.Text = "Ham Madde Güncelle";
+            this.btnHamMaddeGuncelle.Click += new System.EventHandler(this.BtnHamMaddeGuncelle_Click);
             // 
             // btnHamMaddeSil
             // 
             this.btnHamMaddeSil.Name = "btnHamMaddeSil";
             this.btnHamMaddeSil.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHamMaddeSil.Text = "Ham Madde Sil";
+            this.btnHamMaddeSil.Click += new System.EventHandler(this.BtnHamMaddeSil_Click);
+            // 
+            // btnUrunHamMaddeTalep
+            // 
+            this.btnUrunHamMaddeTalep.Name = "btnUrunHamMaddeTalep";
+            this.btnUrunHamMaddeTalep.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnUrunHamMaddeTalep.Text = "Ham Madde Talep";
+            this.btnUrunHamMaddeTalep.Click += new System.EventHandler(this.BtnUrunHamMaddeTalep_Click);
             // 
             // accordionControlElement12
             // 
@@ -197,12 +207,14 @@
             this.btnKalıpOlustur.Name = "btnKalıpOlustur";
             this.btnKalıpOlustur.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnKalıpOlustur.Text = "Kalıp Oluştur";
+            this.btnKalıpOlustur.Click += new System.EventHandler(this.BtnKalıpOlustur_Click);
             // 
             // btnUruneKalıpAta
             // 
             this.btnUruneKalıpAta.Name = "btnUruneKalıpAta";
             this.btnUruneKalıpAta.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnUruneKalıpAta.Text = "Ürüne Kalıp Ata";
+            this.btnUruneKalıpAta.Click += new System.EventHandler(this.BtnUruneKalıpAta_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -220,12 +232,6 @@
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "Element3";
-            // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Ham Madde Talep";
             // 
             // uretimPanel
             // 
@@ -267,6 +273,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnKalıpOlustur;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnUruneKalıpAta;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnUrunHamMaddeTalep;
     }
 }
