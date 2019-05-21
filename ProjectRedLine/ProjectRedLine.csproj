@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ProjectRedLine</RootNamespace>
     <AssemblyName>ProjectRedLine</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +42,7 @@
     <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.SpellChecker.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v18.2.Extensions, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -48,9 +50,12 @@
     <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+
+
     <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -102,11 +107,41 @@
     <Compile Include="UretımHatti\urunGuncelle.Designer.cs">
       <DependentUpon>urunGuncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeGuncelleme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeGuncelleme.Designer.cs">
+      <DependentUpon>urunHamMaddeGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeKayit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeKayit.Designer.cs">
+      <DependentUpon>urunHamMaddeKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunHamMaddeSil.Designer.cs">
+      <DependentUpon>urunHamMaddeSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="UretımHatti\urunIslemKayit.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UretımHatti\urunIslemKayit.Designer.cs">
       <DependentUpon>urunIslemKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretımHatti\urunUruneKalipAta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunUruneKalipAta.Designer.cs">
+      <DependentUpon>urunUruneKalipAta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretımHatti\urunKalipOlusturma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UretımHatti\urunKalipOlusturma.Designer.cs">
+      <DependentUpon>urunKalipOlusturma.cs</DependentUpon>
     </Compile>
     <Compile Include="UretımHatti\urunKayıt.cs">
       <SubType>UserControl</SubType>
@@ -252,6 +287,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SatisHatti\faturaGetir.resx">
       <DependentUpon>faturaGetir.cs</DependentUpon>
@@ -268,8 +304,20 @@
     <EmbeddedResource Include="UretımHatti\urunGuncelle.resx">
       <DependentUpon>urunGuncelle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UretımHatti\urunHamMaddeGuncelleme.resx">
+      <DependentUpon>urunHamMaddeGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretımHatti\urunHamMaddeKayit.resx">
+      <DependentUpon>urunHamMaddeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretımHatti\urunHamMaddeSil.resx">
+      <DependentUpon>urunHamMaddeSil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UretımHatti\urunIslemKayit.resx">
       <DependentUpon>urunIslemKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretımHatti\urunKalipOlusturma.resx">
+      <DependentUpon>urunKalipOlusturma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UretımHatti\urunKayıt.resx">
       <DependentUpon>urunKayıt.cs</DependentUpon>
@@ -280,6 +328,10 @@
     <EmbeddedResource Include="UretımHatti\urunSil.resx">
       <DependentUpon>urunSil.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="UretımHatti\urunUruneKalipAta.resx">
+      <DependentUpon>urunUruneKalipAta.cs</DependentUpon>
+
     <EmbeddedResource Include="YonetimHatti\alinanCeksSenet.resx">
       <DependentUpon>alinanCeksSenet.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +388,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YonetimHatti\YonetimPanel.resx">
       <DependentUpon>YonetimPanel.cs</DependentUpon>
+
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
