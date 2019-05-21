@@ -73,5 +73,10 @@ namespace ProjectRedLine
             }
             urunIslemKayit.Instance.BringToFront();
         }
+
+        private void UretimPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
